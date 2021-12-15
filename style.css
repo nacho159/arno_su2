@@ -1,0 +1,256 @@
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: #7d6959;}
+body{
+    font-family: 'Noto Sans KR';
+    font-size: 17px;
+    line-height: 45px;
+    color: #432d2d;
+}
+
+/*해더*/
+#header{
+    height: 115px;
+}
+.header_inner{
+    width: 1320px;
+    margin: auto;
+    position: relative;
+}
+.logo{
+    position: absolute;
+    top: 28px;
+    left: 0;
+}
+.icon{
+    position: absolute;
+    top: 25px;
+    right: 0;
+}
+.icon li{
+    float: left;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.icon a:hover{
+    color: #4b443a;
+}
+.login{
+    background: url(images/login.png) no-repeat left center;
+    
+}
+.login a{
+    padding: 0 10px 0 30px;
+    margin-right: 10px; 
+    display: block;
+}
+.shopping{
+    background: url(images/shopping.png) no-repeat left center;
+}
+.shopping a{
+    padding: 0 0 0  40px;
+    margin-right: 10px; 
+    display: block;
+}
+.search a{
+    background: url(images/search.png) no-repeat left center;
+    height: 45px;
+    width: 40px;
+    display: block;
+}
+#header2{
+    background-color: #fff;
+    height: 45px;
+    padding: 0 0 20px;
+}
+.header2_inner{
+    width: 1320px;
+    margin: auto;
+    position: relative;
+}
+#header2 .menu{
+    font-size: 27px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -441px;
+}
+#header2 .menu li{
+    font-family: 'Noto Sans KR', sans-serif;
+    float: left;
+    margin: 0 56px;
+}
+#header2 .menu a{
+    color: #837764;
+}
+#header2 .menu a:hover{
+    color: #4b443a;
+}
+#header2.scroll-fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    padding-top: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/*tab css*/
+.tab{
+    width: 100%;
+}
+.tabnav{height: 61px;}
+.tabnav li{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.tabnav li a{ 
+    display: block;
+    padding: 8px 0;
+    background-color: #a08e8e;
+    color: #fff;
+    font-size: 25px;}
+.tabnav li a:hover,
+.tabnav li a.active{background-color: #432d2d;}
+/*.tabcontent{}*/
+
+
+/*컨텐츠1*/
+.content1{
+    height: 783px;
+    animation: bg 8s linear infinite;
+    background: url(images/small1.jpg) no-repeat left top;
+    width:1100px;
+    height: 412px;
+    margin: 200px auto ;
+}
+.content1 div{
+    width: 500px;
+    float: right;
+    text-align: center;
+}
+.content1 img{
+    margin: 30px 0 10px 0;
+}
+.content1 p{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 35px;
+}
+@keyframes bg{
+    0%{background: url(images/small1.jpg) no-repeat left top;}
+    35%{background: url(images/small2.jpg) no-repeat left top;}
+    55%{background: url(images/small2.jpg) no-repeat left top;}
+    70%{background: url(images/small3.jpg) no-repeat left top;}
+    80%{background: url(images/small3.jpg) no-repeat left top;}
+    100%{background: url(images/small1.jpg) no-repeat left top;}
+}
+
+/*tab0*/
+#tab02, #tab03, #tab04{
+    height: 500px;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 30px;
+}
+
+/*컨텐츠2*/
+.content2{
+    height: 1900px;
+}
+.content2_inner{
+    width: 1167px;
+    margin: auto;
+}
+h1{
+    font-size: 20px;
+    color: #432d2d;
+    margin-top: 5px;
+}
+.content2_inner p{
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    color: #432d2d;
+}
+h2{
+    font-size: 20px;
+    color: #432d2d;
+}
+.content2_inner li{
+    float: left;
+    text-align: center;
+    margin-bottom: 80px;
+    position: relative;
+}
+.img{
+    width: 294px;
+    height: 402px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.content2_inner li:nth-child(2){
+    margin: 0 140px;
+}
+.content2_inner img{
+    display: block;
+    transition: all 1s;
+}
+.content2_inner li:hover img{
+    transform: scale(1.2, 1.2);
+}
+
+
+/*푸터*/
+#footer{
+    height: 310px;
+    background-color: #464646;
+}
+.footer_inner{
+    color: #838383;
+    width: 1200px;
+    margin: auto;
+    padding: 50px 0;
+    font-weight: 500;
+}
+.f_text{
+    float: left;
+    width: 800px;
+}
+.f_text img{
+    float: left;
+    display: block;
+    margin-bottom: 40px;
+}
+.f_text ul{
+    float: right;
+    margin-right: 100px;
+}
+.f_text ul li{
+    float: left;
+    margin-left: 16px;
+}
+.f_text ul li a{
+    color: #838383;
+}
+.f_text ul li a:hover{
+    color: rgb(199, 198, 198);
+}
+.f_text p{
+    clear: both;
+    line-height: 30px;
+}
+.sns{
+    float: right;
+    margin-top: 40px;
+}
+.sns li{
+    float: left;
+    margin-right: 13px;
+    opacity: 0.6;
+}
+.sns li:hover{
+    opacity: 1;
+}
